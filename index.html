@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/6f3103b13c.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Timer</title>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Timer</h1>
+            <div class="panel">
+             <p>hrs:</p><input  class="hrs_i" id="hrs_inp" type="number" min="0"max=100>
+             <p>mins:</p><input class="min_i" id="mins_inp" type="number"min="0" max="59">
+             <p>secs:</p><input class="sec_i" id="sec_inp" type="number" min="0" max="59">
+            </div>
+            <div class="timer">
+                <div class="timer_space">
+                    <p class="hrs" id="hrs"></p>
+                    <p>:</p>
+                    <p class="mins" id="mins"></p>
+                    <p>:</p>
+                    <p class="sec" id="sec"></p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                <button id="reset" onclick="cond=()=>false"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+            </div>
+        </div>
+    </section>
+    <script src="/app.js"></script>
+</body>
+</html>
